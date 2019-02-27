@@ -4,18 +4,18 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>pluralsight.demo</groupId>
-	<artifactId>pluralsight-eureka-tollrate-service</artifactId>
+	<artifactId>pluralsight-eureka-tollrate-com.liveit.service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>pluralsight-eureka-tollrate-service</name>
+	<name>pluralsight-eureka-tollrate-com.liveit.service</name>
 	<description>Demo project for Spring Cloud Eureka</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.0.5.RELEASE</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<relativePath/> <!-- lookup parent from com.liveit.repository -->
 	</parent>
 
 	<properties>
@@ -29,9 +29,9 @@
        <artifactId>spring-boot-starter-web</artifactId>
 	</dependency>
 		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-		</dependency>
+		<groupId>org.springframework.cloud</groupId>
+		<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+	</dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -41,7 +41,6 @@
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
-			<scope>test</scope>
 		</dependency>
 	</dependencies>
 
@@ -65,16 +64,5 @@
 			</plugin>
 		</plugins>
 	</build>
-
-	<repositories>
-	    <repository>
-	        <id>spring-milestones</id>
-	        <name>Spring Milestones</name>
-	        <url>https://repo.spring.io/libs-milestone</url>
-	        <snapshots>
-	            <enabled>false</enabled>
-	        </snapshots>
-	    </repository>
-	</repositories>
 	
 </project>
